@@ -22,13 +22,9 @@ This repository contains my personal configurations (dotfiles) for tools and app
    git clone https://github.com/your-username/dotfiles.git ~/.dotfiles
    ```
 
-2. Create the necessary directories and link the configuration files:
+2. Run the bootstrap script to set up the symbolic links:
    ```
-   mkdir -p ~/.dotfiles/alacritty
-   mkdir -p ~/.config/alacritty
-
-   ln -s ~/.dotfiles/alacritty/alacritty.toml ~/.config/alacritty/alacritty.toml
-   ln -s ~/.dotfiles/alacritty/nord.toml      ~/.config/alacritty/nord.toml
+   cd ~/.dotfiles && ./bootstrap.sh
    ```
 
 3. Restart Alacritty to apply the changes.
