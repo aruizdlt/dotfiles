@@ -15,7 +15,7 @@ This repository contains my personal configurations (dotfiles) for tools and app
 - Linux (tested on Ubuntu 24.04 LTS)
 - Git
 - Alacritty terminal emulator
-- [Fira Code](https://github.com/tonsky/FiraCode) font (required for the font configuration in alacritty.toml)
+- [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts) (required for the font configuration in alacritty.toml and Starship symbols)
 - Starship (install from https://starship.rs/)
 
 ## Installation
