@@ -7,6 +7,8 @@ This repository contains my personal configurations (dotfiles) for tools and app
 - **alacritty/**: Configurations for Alacritty, a fast and configurable terminal emulator.
   - `alacritty.toml`: Main configuration.
   - `nord.toml`: Nord theme for Alacritty.
+- **starship/**: Configuration for Starship, a minimal, fast, and customizable prompt for any shell.
+  - `starship.toml`: Main configuration.
 
 ## Requirements
 
@@ -14,6 +16,7 @@ This repository contains my personal configurations (dotfiles) for tools and app
 - Git
 - Alacritty terminal emulator
 - [Fira Code](https://github.com/tonsky/FiraCode) font (required for the font configuration in alacritty.toml)
+- Starship (install from https://starship.rs/)
 
 ## Installation
 
@@ -27,12 +30,12 @@ This repository contains my personal configurations (dotfiles) for tools and app
    cd ~/.dotfiles && ./bootstrap.sh
    ```
 
-3. Restart Alacritty to apply the changes.
+3. Restart Alacritty to apply the changes, and restart your shell or source your ~/.bashrc to apply Starship changes.
 
 ## Usage
 
 - Customize the configurations according to your needs.
-- Make sure Alacritty is installed on your system.
+- Make sure Alacritty and Starship are installed on your system.
 
 ## Contribution
 

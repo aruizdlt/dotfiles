@@ -1,0 +1,57 @@
+# Starship configuration
+# https://starship.rs/config/
+
+# Basic prompt configuration
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+# Add username and hostname
+[username]
+style_user = "blue bold"
+style_root = "red bold"
+format = "user: [$user]($style) "
+disabled = false
+show_always = true
+
+[hostname]
+ssh_only = false
+format = "on [$hostname](bold red) "
+disabled = false
+
+# Directory
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = "~"
+read_only_style = "197"
+read_only = "  "
+format = "[$path]($style)[$read_only]($read_only_style) "
+
+# Git
+[git_branch]
+symbol = " "
+style = "bold yellow"
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+style = "bold yellow"
+format = "([$all_status$ahead_behind]($style) )"
+
+# Languages
+[nodejs]
+symbol = "⬢ "
+style = "bold green"
+disabled = true
+
+[python]
+symbol = "🐍 "
+style = "bold yellow"
+disabled = true
+
+# Time
+[time]
+disabled = false
+format = "🕙 [$time]($style) "
+time_format = "%R"
+style = "bright-white"

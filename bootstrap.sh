@@ -8,7 +8,7 @@
 set -e  # Exit on any error
 
 DOTFILES_DIR="$HOME/.dotfiles"
-CONFIG_DIR="$HOME/.config/alacritty"
+CONFIG_DIR="$HOME/.config"
 
 echo "Setting up dotfiles..."
 
@@ -16,8 +16,9 @@ echo "Setting up dotfiles..."
 mkdir -p "$CONFIG_DIR"
 
 # Create symbolic links
-ln -sf "$DOTFILES_DIR/alacritty/alacritty.toml" "$CONFIG_DIR/alacritty.toml"
-ln -sf "$DOTFILES_DIR/alacritty/nord.toml" "$CONFIG_DIR/nord.toml"
+ln -sf "$DOTFILES_DIR/alacritty/alacritty.toml" "$CONFIG_DIR/alacritty/alacritty.toml"
+ln -sf "$DOTFILES_DIR/alacritty/nord.toml" "$CONFIG_DIR/alacritty/nord.toml"
+ln -sf "$DOTFILES_DIR/starship/starship.toml" "$CONFIG_DIR/starship.toml"
 
 echo "Dotfiles setup complete!"
 echo "Restart Alacritty to apply changes."
