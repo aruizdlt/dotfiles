@@ -82,7 +82,7 @@ save_to_clipboard = true
 # MOUSE
 # -----------------------------------------------------------------------------
 [mouse]
-hide_when_typing = true
+hide_when_typing = false
 
 # -----------------------------------------------------------------------------
 # KEYBOARD
@@ -104,3 +104,8 @@ bindings = [
 render_timer = false
 persistent_logging = false
 log_level = "Warn"
+
+[[keyboard.bindings]]
+key = "Return"
+mods = "Shift"
+chars = "\u001b\r"
