@@ -85,6 +85,29 @@ save_to_clipboard = true
 hide_when_typing = false
 
 # -----------------------------------------------------------------------------
+# HINTS
+# -----------------------------------------------------------------------------
+[hints]
+# Allow opening URLs and paths with keyboard shortcuts
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "U", mods = "Control|Shift" }
+regex = "(ipfs:|ipns:|magnet:|mailto:|gemini://|gopher://|https://|http://|news:|file:|git://|ssh:|ftp://)[^\u0000-\u001f\u007f-\u009f<>\"\\s{-}\\^⟨⟩`]+"
+
+[[hints.enabled]]
+command = "xdg-open"
+hyperlinks = true
+post_processing = true
+persist = false
+mouse.enabled = true
+binding = { key = "P", mods = "Control|Shift" }
+regex = "(~/|/)[^\u0000-\u001f\u007f-\u009f<>\"\\s{-}\\^⟨⟩`]+"
+
+# -----------------------------------------------------------------------------
 # KEYBOARD
 # -----------------------------------------------------------------------------
 [keyboard]
