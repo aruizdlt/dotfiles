@@ -119,7 +119,7 @@ bindings = [
   { key = "Minus", mods = "Control", action = "DecreaseFontSize" },
   { key = "Key0",  mods = "Control", action = "ResetFontSize" },
 
-  { key = "R", mods = "Control|Shift", action = "ReloadConfig" }
+  { key = "Return", mods = "Shift", chars = "\u001b\r" }
 ]
 
 # -----------------------------------------------------------------------------
@@ -129,8 +129,3 @@ bindings = [
 render_timer = false
 persistent_logging = false
 log_level = "Warn"
-
-[[keyboard.bindings]]
-key = "Return"
-mods = "Shift"
-chars = "\u001b\r"

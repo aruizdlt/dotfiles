@@ -19,6 +19,7 @@ mkdir -p "$CONFIG_DIR"
 ln -sf "$DOTFILES_DIR/alacritty/alacritty.toml" "$CONFIG_DIR/alacritty/alacritty.toml"
 ln -sf "$DOTFILES_DIR/alacritty/nord.toml" "$CONFIG_DIR/alacritty/nord.toml"
 ln -sf "$DOTFILES_DIR/starship/starship.toml" "$CONFIG_DIR/starship.toml"
+ln -sf "$DOTFILES_DIR/tmux/.tmux.conf" "$HOME/.tmux.conf"
 
 echo "Dotfiles setup complete!"
-echo "Restart Alacritty to apply changes."
+echo "Restart Alacritty and tmux to apply changes."

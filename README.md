@@ -9,6 +9,8 @@ This repository contains my personal configurations (dotfiles) for tools and app
   - `nord.toml`: Nord theme for Alacritty.
 - **starship/**: Configuration for Starship, a minimal, fast, and customizable prompt for any shell.
   - `starship.toml`: Main configuration.
+- **tmux/**: Configuration for tmux, a terminal multiplexer for efficient workflow.
+  - `.tmux.conf`: Optimized configuration with vim-style navigation and Gruvbox theme.
 
 ## Requirements
 
@@ -17,6 +19,7 @@ This repository contains my personal configurations (dotfiles) for tools and app
 - Alacritty terminal emulator
 - [FiraCode Nerd Font](https://github.com/ryanoasis/nerd-fonts) (required for the font configuration in alacritty.toml and Starship symbols)
 - Starship (install from https://starship.rs/)
+- tmux (install with `sudo apt install tmux` on Ubuntu/Debian)
 
 ## Installation
 
@@ -30,12 +33,30 @@ This repository contains my personal configurations (dotfiles) for tools and app
    cd ~/.dotfiles && ./bootstrap.sh
    ```
 
-3. Restart Alacritty to apply the changes, and restart your shell or source your ~/.bashrc to apply Starship changes.
+3. Restart Alacritty to apply the changes, restart your shell or source your ~/.bashrc to apply Starship changes, and start or restart tmux.
 
 ## Usage
 
 - Customize the configurations according to your needs.
-- Make sure Alacritty and Starship are installed on your system.
+- Make sure Alacritty, Starship, and tmux are installed on your system.
+
+### Tmux Key Bindings
+
+The tmux configuration includes the following optimizations:
+
+**Prefix Key:** Changed to `Ctrl+a` (more ergonomic than default `Ctrl+b`)
+
+**Essential Commands:**
+- `Ctrl+a |` - Split pane vertically
+- `Ctrl+a -` - Split pane horizontally
+- `Ctrl+a r` - Reload tmux configuration
+- `Alt+h/j/k/l` - Navigate between panes (vim-style, no prefix needed)
+- `Shift+Left/Right` - Navigate between windows
+- `Ctrl+a h/j/k/l` - Resize panes (vim-style)
+- `Ctrl+a z` - Toggle pane zoom
+- `Ctrl+a [` - Enter copy mode (vi-style)
+- `Ctrl+a x` - Close pane
+- `Ctrl+a c` - New window
 
 ## Contribution
 
